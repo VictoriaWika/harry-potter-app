@@ -5,4 +5,9 @@ export default {
   component: Card,
 }
 
-export const defaultCard = () => Card('Harry Potter')
+export const defaultCard = () =>
+  Card({
+    name: 'Harry Potter',
+    house: 'Gryffindor',
+    image: 'character.image',
+  })
