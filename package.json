@@ -2,7 +2,7 @@
   "name": "javascript-app-template",
   "version": "0.0.1",
   "private": true,
-  "author": "neuefische GmbH",
+  "author": "Victoria Wika",
   "description": "",
   "keywords": [],
   "license": "ISC",
@@ -45,6 +45,8 @@
     "husky": "^5.0.9",
     "lint-staged": "10.5.3",
     "prettier": "2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "snowpack": "3.0.11",
     "stylelint": "13.9.0",
     "stylelint-config-prettier": "8.0.2",
@@ -52,10 +54,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuefische/javascript-app-template.git"
+    "url": "git+https://github.com/VictoriaWika/harry-potter-app.git"
   },
   "bugs": {
-    "url": "https://github.com/neuefische/javascript-app-template/issues"
+    "url": "https://github.com/VictoriaWika/harry-potter-app/issues"
   },
-  "homepage": "https://github.com/neuefische/javascript-app-template#readme"
+  "homepage": "https://github.com/VictoriaWika/harry-potter-app#readme"
 }
