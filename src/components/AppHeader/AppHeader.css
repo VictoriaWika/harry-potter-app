@@ -1,7 +1,7 @@
 .AppHeader {
   background: var(--color-primary);
   color: var(--color-white);
-  padding: 15px 10px;
+  padding: 10px 10px;
   position: fixed;
   width: 96%;
   margin: 0 2%;
@@ -12,6 +12,7 @@
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
+  padding-top: 5px;
 }
 
 /* .AppHeader img {

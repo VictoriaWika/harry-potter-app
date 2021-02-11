@@ -3,18 +3,21 @@ import getCharacters from './services/getCharacters'
 import AppHeader from './components/AppHeader'
 import Card from './components/Card'
 import HouseFilter from './components/HouseFilter'
+import Navigation from './components/Navigation'
 
 export default function App() {
   const header = AppHeader('Hogwarts')
   const houseFilter = HouseFilter(onFilterByHouse)
   const cardContainer = createElement('div')
+  const navigation = Navigation(onNavigate)
 
   const app = createElement(
     'div',
     { className: 'App' },
     header,
     houseFilter,
-    cardContainer
+    cardContainer,
+    navigation
   )
   let characters
 
@@ -46,6 +49,33 @@ export default function App() {
       error.message
     )
     app.append(errorMessage)
+  }
+
+  function onNavigate(text) {
+    if (text === 'Home') {
+      console.log('Home')
+      // homePage.show()
+      // createPage.hide()
+      // header.setText('Hogwarts')
+    }
+    if (text === 'Wizards') {
+      console.log('Wizards')
+      // homePage.hide()
+      // wizardsPage.show()
+      // header.setText('Wizards')
+    }
+    if (text === 'Sorting Hat') {
+      console.log('Sorting Hat')
+      // homePage.hide()
+      // wizardsPage.show()
+      // header.setText('Wizards')
+    }
+    if (text === 'Quidditsch') {
+      console.log('Quidditsch')
+      // homePage.hide()
+      // wizardsPage.show()
+      // header.setText('Wizards')
+    }
   }
   return app
 }

@@ -1,0 +1,25 @@
+.Navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 5px 10px;
+  position: fixed;
+  margin: 0 2%;
+  width: 96%;
+  bottom: 10px;
+}
+
+.Navigation__button {
+  display: grid;
+  grid-template-rows: 30px auto;
+  background: transparent;
+  border: none;
+  padding: 5px;
+}
+
+.Navigation__button > img {
+  height: 100%;
+  width: 100%;
+}
