@@ -1,3 +1,4 @@
 import App from './App'
 
-App()
+const app = App()
+document.body.append(app)
