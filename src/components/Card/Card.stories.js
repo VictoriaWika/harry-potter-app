@@ -9,5 +9,5 @@ export const defaultCard = () =>
   Card({
     name: 'Harry Potter',
     house: 'Gryffindor',
-    image: 'character.image',
+    image: 'http://hp-api.herokuapp.com/images/harry.jpg',
   })
