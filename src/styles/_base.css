@@ -18,6 +18,10 @@ h3 {
   margin: 0;
 }
 
+h1 {
+  font-family: 'Harry Potter', sans-serif;
+}
+
 input,
 button {
   font-size: 1em;
