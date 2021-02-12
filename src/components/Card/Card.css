@@ -1,16 +1,60 @@
 .Card {
   text-align: center;
   color: var(--text-primary);
-  border-bottom: 1px solid;
+  border: 1px solid;
   padding: 20px;
   margin: 20px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
-
-/* .Card:first-child {
-  margin-top: 200px;
-} */
 
 .Card__image {
   border-radius: 10%;
   width: auto;
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 6400px;
+  height: 150px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    wave 20s ease-in-out -0.75s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: -170px;
+  }
+
+  100% {
+    margin-left: -6000px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
 }
