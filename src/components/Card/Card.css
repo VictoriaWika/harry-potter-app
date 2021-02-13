@@ -23,19 +23,30 @@
 }
 
 .wave {
+  will-change: transform;
   position: absolute;
   bottom: 0;
   width: 6400px;
   height: 150px;
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
+  -webkit-animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   z-index: -1;
+  -webkit-transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 
 .wave:nth-of-type(2) {
+  height: 170px;
+  bottom: -23px;
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
-    wave 20s ease-in-out -0.75s infinite;
+    swell 20s ease-in-out -0.075s infinite;
+  -webkit-animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 20s ease-in-out -0.075s infinite;
   opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes wave {
@@ -48,7 +59,28 @@
   }
 }
 
+@-webkit-keyframes wave {
+  0% {
+    margin-left: -170px;
+  }
+
+  100% {
+    margin-left: -6000px;
+  }
+}
+
 @keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@-webkit-keyframes swell {
   0%,
   100% {
     transform: translate3d(0, -25px, 0);
