@@ -1,17 +1,32 @@
 .Card {
+  min-width: 315px;
+  max-width: 315px;
+  min-height: 349.1px;
   text-align: center;
+  display: grid;
   color: var(--text-primary);
   border: 1px solid;
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
 
+.Card:last-child {
+  margin-bottom: 80px;
+}
+
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .Card__image {
   border-radius: 10%;
   width: auto;
+  justify-self: center;
+  align-self: flex-end;
 }
 
 .ocean {
