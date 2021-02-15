@@ -1,6 +1,5 @@
 import './Card.css'
 import createElement from '../../lib/createElement'
-// import getColorByHouse from '../../services/getColorByHouse'
 
 import GwaveSVG from '../../assets/icons/Gwave.svg'
 import HwaveSVG from '../../assets/icons/Hwave.svg'
