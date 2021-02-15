@@ -1,7 +1,7 @@
 export default function getColorByHouse(house) {
-  if (house === 'Gryffindor') return 'darkred'
-  if (house === 'Slytherin') return 'darkgreen'
-  if (house === 'Hufflepuff') return 'gold'
-  if (house === 'Ravenclaw') return 'darkblue'
+  if (house === 'Gryffindor') return '#660000'
+  if (house === 'Slytherin') return '#215214'
+  if (house === 'Hufflepuff') return '#ebc621'
+  if (house === 'Ravenclaw') return '#18324a'
   else return 'grey'
 }

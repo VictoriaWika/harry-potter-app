@@ -1,5 +1,4 @@
 .Button {
-  box-shadow: 0 4px 4px #0004;
   background: white;
   border: none;
   padding: 0;
@@ -10,4 +9,19 @@
 .Button.selected {
   background: black;
   color: white;
+}
+
+.Button__FilterContainer {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 200px;
+}
+
+.Button__ShowFilters {
+  background: white;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  margin: 0 auto;
+  width: 100%;
 }

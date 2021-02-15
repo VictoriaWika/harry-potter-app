@@ -16,5 +16,31 @@ export default function HouseFilter(onFilterByHouse) {
 
     return button
   })
-  return createElement('section', { className: HouseFilter }, ...buttons)
+
+  const showFilters = createElement('button', {
+    className: 'Button__ShowFilters',
+    innerText: 'Show Filter Options',
+  })
+
+  showFilters.addEventListener('click', () => {
+    buttonContainer.hidden = !buttonContainer.hidden
+  })
+
+  const buttonContainer = createElement(
+    'section',
+    {
+      className: 'Button__container',
+      hidden: true,
+    },
+    ...buttons
+  )
+
+  const filterContainer = createElement(
+    'section',
+    { className: 'Button__FilterContainer' },
+    showFilters,
+    buttonContainer
+  )
+
+  return createElement('section', { className: HouseFilter }, filterContainer)
 }
