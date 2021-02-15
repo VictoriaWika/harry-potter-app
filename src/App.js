@@ -54,27 +54,15 @@ export default function App() {
   function onNavigate(text) {
     if (text === 'Home') {
       console.log('Home')
-      // homePage.show()
-      // createPage.hide()
-      // header.setText('Hogwarts')
     }
     if (text === 'Wizards') {
       console.log('Wizards')
-      // homePage.hide()
-      // wizardsPage.show()
-      // header.setText('Wizards')
     }
     if (text === 'Sorting Hat') {
       console.log('Sorting Hat')
-      // homePage.hide()
-      // wizardsPage.show()
-      // header.setText('Wizards')
     }
     if (text === 'Quidditsch') {
       console.log('Quidditsch')
-      // homePage.hide()
-      // wizardsPage.show()
-      // header.setText('Wizards')
     }
   }
   return app
