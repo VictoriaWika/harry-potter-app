@@ -38,6 +38,7 @@ export default function App() {
 
   function createCards(characters) {
     const cards = characters.map(character => Card(character))
+    cardContainer.className = 'CardContainer'
     cardContainer.innerHTML = ''
     cardContainer.append(...cards)
   }
