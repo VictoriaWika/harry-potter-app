@@ -16,11 +16,6 @@
   padding-top: 5px;
 }
 
-/* .AppHeader img {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(263deg)
-    brightness(91%) contrast(101%);
-} */
-
 .flicker {
   -webkit-animation: flicker 2s ease-in-out infinite both;
   animation: flicker 2s ease-in-out infinite both;

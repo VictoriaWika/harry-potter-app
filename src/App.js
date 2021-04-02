@@ -21,7 +21,6 @@ export default function App() {
   )
   let characters
 
-  // fetch API
   getCharacters()
     .then(data => {
       createCards(data)
